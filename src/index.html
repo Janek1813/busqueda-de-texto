@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscador de texto</title>
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Buscador de texto</h1>
+
+    <div id="alertas" class="alertas" aria-live="polite"></div>
+
+    <label for="texto">Texto</label>
+    <textarea id="texto" rows="8" placeholder="Escribe o pega aqui tu texto..."></textarea>
+
+    <label for="busqueda">Palabra o caracter a buscar</label>
+    <input id="busqueda" type="text" placeholder="Ej: casa" autocomplete="off" />
+
+    <div class="botones">
+      <button id="btn-buscar" class="btn btn-primario" type="button">Buscar</button>
+      <button id="btn-limpiar" class="btn btn-secundario" type="button">Limpiar</button>
+    </div>
+
+    <section class="resultado">
+      <p class="contador">
+        Apariciones: <strong id="contador">0</strong>
+      </p>
+      <h2>Texto procesado</h2>
+      <div id="resultado" class="texto-procesado"></div>
+    </section>
+  </main>
+</body>
+</html>
